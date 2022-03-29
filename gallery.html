@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <title>swargabuilders|gallery</title>
+</head>
+<body>
+      <!-- navgaition menu -->
+  <nav>
+    <div class="navbar">
+      <div class="logo"><a href="#"><img src="images/SWARGA.png" alt="logo"></a></div>
+      <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <div class="cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+      </ul>
+      <div class="media-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+  <!--gallery-->
+  <section>
+  <div class="wrapper">
+    <div class="gallery">
+      <div class="image"><span><img src="images/x1the-biennale-pavilion-pc-kochi-biennale-foundation-593956.jpg.pagespeed.ic.WTi84WHV0M.webp" alt=""></span></div>
+      <div class="image"><span><img src="images/x20-489631.jpg.pagespeed.ic.6pNnk3iXRG.jpg" alt=""></span></div>
+      <div class="image"><span><img src="images/xenchanted-island-056-243369.jpg.pagespeed.ic.2P8oF5gAFP.jpg" alt=""></span></div>
+      <div class="image"><span><img src="images/ximg-2572-640333.jpg.pagespeed.ic.8G_XU8KlSW.jpg" alt=""></span></div>
+      <div class="image"><span><img src="images/xmd-161-610366.jpg.pagespeed.ic.1CrP2kZE3X.jpg" alt=""></span></div>
+      <div class="image"><span><img src="images/xst-33-copy-224169.jpg.pagespeed.ic.STVcOST5Gr.jpg" alt=""></span></div>
+    </div>
+  </div>
+  <div class="preview-box">
+    <div class="details">
+      <span class="title">Image <p class="current-img"></p> of <p class="total-img"></p></span>
+      <span class="icon fas fa-times"></span>
+    </div>
+    <div class="image-box">
+      <div class="slide prev"><i class="fas fa-angle-left"></i></div>
+      <div class="slide next"><i class="fas fa-angle-right"></i></div>
+      <img src="" alt="">
+    </div>
+  </div>
+  <div class="shadow"></div>
+</section>
+  <!--footer section-->
+  <section class="footer">
+    <div class="content">
+      <div class="left box">
+        <div class="upper">
+          <div class="topic">About us</div>
+          <p>swarga builders help you to develop the best of your dream home</p>
+        </div>
+        <div class="lower">
+          <div class="topic">Contact us</div>
+          <div class="phone">
+            <a href="#"><i class="fas fa-phone-volume"></i>+007 9089 6767</a>
+          </div>
+          <div class="email">
+            <a href="#"><i class="fas fa-envelope"></i>abc@gmail.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="middle box">
+        <div class="topic">Our Services</div>
+        <div><a href="#">plans</a></div>
+        <div><a href="#">Reasearch</a></div>
+        <div><a href="#">downloads</a></div>
+        <div><a href="#">projects</a></div>
+        <div><a href="#">catalogue</a></div>
+        <div><a href="#">Prototyping</a></div>
+      </div>
+      <div class="right box">
+        <div class="topic">Subscribe us</div>
+        <form action="#">
+          <input type="text" placeholder="Enter email address">
+          <input type="submit" name="" value="Send">
+          <div class="media-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="bottom">
+      <p>Copyright © 2020 <a href="#">swargabuilders</a> All rights reserved</p>
+    </div>
+ </section>
+  <!--styling-->
+  <style>
+       /* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+/*global styles*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+section{
+    padding-top: 6%;
+}
+/* navbar styling */
+nav{
+    background: #000000;
+    position: fixed;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 998;
+    transition: all 0.3s ease;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  nav .navbar{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  }
+  nav .navbar .logo a{
+    font-weight: 500;
+    font-size: 35px;
+    color: #fdfdff;
+  }
+  nav.sticky .navbar .logo a{
+    color: #fff;
+  }
+  nav .navbar .menu{
+    display: flex;
+    position: relative;
+  }
+  nav .navbar .menu li{
+    list-style: none;
+    margin: 0 8px;
+  }
+  .navbar .menu a{
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 6px 0;
+    transition: all 0.4s ease;
+  }
+  .navbar .menu a:hover{
+    color: #8a7960;
+  }
+  nav.sticky .menu a{
+    color: #FFF;
+  }
+  nav.sticky .menu a:hover{
+    color: #f1f6f8;
+  }
+  .navbar .media-icons a{
+    color: #ffffff;
+    font-size: 18px;
+    margin: 0 6px;
+  }
+  nav.sticky .media-icons a{
+    color: #FFF;
+  }
+::selection{
+  color: #fff;
+  background: #007bff;
+}
+body{
+  display:flexbox;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.wrapper{
+  max-width: 100%;
+}
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery .image{
+  padding: 7px;
+  width: calc(100% / 3);
+}
+.gallery .image span{
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+.gallery .image img{
+  width: 100%;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+}
+.gallery .image:hover img{
+  transform: scale(1.1);
+}
+
+.preview-box{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  background: #fff;
+  max-width: 700px;
+  width: 100%;
+  z-index: 5;
+  opacity: 0;
+  pointer-events: none;
+  border-radius: 3px;
+  padding: 0 5px 5px 5px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+}
+.preview-box.show{
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+  transition: all 0.3s ease;
+}
+.preview-box .details{
+  display: flex;
+  align-items: center;
+  padding: 12px 15px 12px 10px;
+  justify-content: space-between;
+}
+.preview-box .details .title{
+  display: flex;
+  font-size: 18px;
+  font-weight: 400;
+}
+.details .title p{
+  margin: 0 5px;
+}
+.details .title p.current-img{
+  font-weight: 500;
+}
+.details .icon{
+  color: #8a7960;
+  font-size: 20px;
+  cursor: pointer;
+}
+.preview-box .image-box{
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+.image-box .slide{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+  height: 50px;
+  width: 60px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 3px;
+}
+.slide.prev{
+  left: 0px;
+}
+.slide.next{
+  right: 0px;
+}
+.image-box img{
+  width: 100%;
+  border-radius: 0 0 3px 3px;
+}
+.shadow{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  display: none;
+  background: rgba(0,0,0,0.45);
+}
+ /*footer*/
+ .footer{
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: #111;
+}
+.footer .content{
+  max-width: 1350px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer .content p,a{
+  color: #fff;
+}
+.footer .content .box{
+  width: 33%;
+  transition: all 0.4s ease;
+}
+.footer .content .topic{
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 16px;
+
+}
+.footer .content p{
+  text-align: justify;
+}
+.footer .content .lower .topic{
+  margin: 24px 0 5px 0;
+}
+.footer .content .lower i{
+  padding-right: 16px;
+}
+.footer .content .middle{
+  padding-left: 80px;
+}
+.footer .content .middle a{
+  line-height: 32px;
+}
+.footer .content .right input[type="text"]{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  color: #d9d9d9;
+  background: #000;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 17px;
+  border: 2px solid #222222;
+}
+.footer .content .right input[type="submit"]{
+  height: 42px;
+  width: 100%;
+  font-size: 18px;
+  color: #d9d9d9;
+  background: #d1b98b;
+  outline: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 12px;
+  border: 2px solid #d1b98b;
+  transition: all 0.3s ease-in-out;
+}
+.content .right input[type="submit"]:hover{
+  background: none;
+  color:  #a17a30;
+}
+.footer .content .media-icons a{
+  font-size: 16px;
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  text-align: center;
+  line-height: 43px;
+  border-radius: 5px;
+  border: 2px solid #222222;
+  margin: 30px 5px 0 0;
+  transition: all 0.3s ease;
+}
+.content .media-icons a:hover{
+  border-color: #a17a30;
+}
+.footer .bottom{
+  width: 100%;
+  text-align: right;
+  color: #d9d9d9;
+  padding: 0 40px 5px 0;
+}
+.footer .bottom a{
+  color: #a17a30;
+}
+.footer a{
+  transition: all 0.3s ease;
+}
+.footer a:hover{
+  color: #a17a30;
+}
+  </style>
+  <script>
+      //getting all required elements
+const gallery  = document.querySelectorAll(".image"),
+previewBox = document.querySelector(".preview-box"),
+previewImg = previewBox.querySelector("img"),
+closeIcon = previewBox.querySelector(".icon"),
+currentImg = previewBox.querySelector(".current-img"),
+totalImg = previewBox.querySelector(".total-img"),
+shadow = document.querySelector(".shadow");
+
+window.onload = ()=>{
+    for (let i = 0; i < gallery.length; i++) {
+        totalImg.textContent = gallery.length; //passing total img length to totalImg variable
+        let newIndex = i; //passing i value to newIndex variable
+        let clickedImgIndex; //creating new variable
+        
+        gallery[i].onclick = () =>{
+            clickedImgIndex = i; //passing cliked image index to created variable (clickedImgIndex)
+            function preview(){
+                currentImg.textContent = newIndex + 1; //passing current img index to currentImg varible with adding +1
+                let imageURL = gallery[newIndex].querySelector("img").src; //getting user clicked img url
+                previewImg.src = imageURL; //passing user clicked img url in previewImg src
+            }
+            preview(); //calling above function
+    
+            const prevBtn = document.querySelector(".prev");
+            const nextBtn = document.querySelector(".next");
+            if(newIndex == 0){ //if index value is equal to 0 then hide prevBtn
+                prevBtn.style.display = "none"; 
+            }
+            if(newIndex >= gallery.length - 1){ //if index value is greater and equal to gallery length by -1 then hide nextBtn
+                nextBtn.style.display = "none"; 
+            }
+            prevBtn.onclick = ()=>{ 
+                newIndex--; //decrement index
+                if(newIndex == 0){
+                    preview(); 
+                    prevBtn.style.display = "none"; 
+                }else{
+                    preview();
+                    nextBtn.style.display = "block";
+                } 
+            }
+            nextBtn.onclick = ()=>{ 
+                newIndex++; //increment index
+                if(newIndex >= gallery.length - 1){
+                    preview(); 
+                    nextBtn.style.display = "none";
+                }else{
+                    preview(); 
+                    prevBtn.style.display = "block";
+                }
+            }
+            document.querySelector("body").style.overflow = "hidden";
+            previewBox.classList.add("show"); 
+            shadow.style.display = "block"; 
+            closeIcon.onclick = ()=>{
+                newIndex = clickedImgIndex; //assigning user first clicked img index to newIndex
+                prevBtn.style.display = "block"; 
+                nextBtn.style.display = "block";
+                previewBox.classList.remove("show");
+                shadow.style.display = "none";
+                document.querySelector("body").style.overflow = "scroll";
+            }
+        }
+        
+    } 
+}
+  </script>
+</body>
+</html>
